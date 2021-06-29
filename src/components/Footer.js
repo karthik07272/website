@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <div className='footer-container'>
+          <div className='footer-contain'>
+
       <section className='connect'>
         <div class='social-media-wrap'>
           <div class='social-icons'>
@@ -42,7 +44,7 @@ function Footer() {
       <section class="connect">
         <div className='input-areas'>
           <form>
-            <p>Subscribe to our newsletter</p>
+            <p class="top">Subscribe to our newsletter</p>
             <input
               className='footer-input'
               name='email'
@@ -68,7 +70,7 @@ function Footer() {
               placeholder='Email'
             /><br />
             <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-            <label for="vehicle2"> Join TEN's Discord Community</label><br></br>
+            <label class="aa"for="vehicle2"> Join TEN's Discord Community</label><br></br>
             <input type="submit" value="Submit"/>
 
 
@@ -99,10 +101,10 @@ function Footer() {
             </Link>Contact Us</div>
             </section>
       
-
+</div>
             
         <div class='right'>
-          © 2020 Limitless Technologies - The Entrepreneurship Network
+         <p class="rt"> © 2020 Limitless Technologies - The Entrepreneurship Network</p>
         </div>
       
 
