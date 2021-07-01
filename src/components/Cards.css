@@ -99,11 +99,7 @@ h1 {
   line-height: 24px;
 }
 
-@media only screen and (min-width: 400px) {
-  .content__blog__container {
-    width: 84%;
-  }
-}
+
 
 @media only screen and (min-width: 1024px) {
   .cards__items {

@@ -28,14 +28,15 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          <div to='/' className='navbar-logo' onClick={closeMobileMenu}>
             Logo
-            <i class='fab fa-typo3'/>
-          </Link>
+            <i class='fab fa-typo3' />
+          </div>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                 Home
@@ -47,7 +48,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-              Online Courses
+                Online Courses
               </Link>
             </li>
             <li className='nav-item'>
@@ -56,7 +57,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-               We're Hiring
+                We're Hiring
               </Link>
             </li>
             <li className='nav-item'>
@@ -65,34 +66,30 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-               <button class="dropbtn">More</button>
-               <div class="dropdown-content">
-                            <k href="#Blog">Blog</k>
-                            <k href="#Certification">Certification</k>
-                            <k href="#Alumni Team">Alumni Team</k>
-                            <k href="#Forum">Forum</k>
-                            <k href="#Hackathon">Hackathon</k>
-                            <k href="#Membership Registration">Membkrship Registration</k>
-                            <k href="#Campus Ambassador Program">Campus Ambassador Program</k>
-                            <k href="#Mentorship">Mentorship</k>
-                            <k href="#Social Meadia">Social Meadia</k>
-                            <k href="#Testimonials">Testimonials</k>
-                            <k href="#Complaints">Complaints</k>
-                        </div>
+                <div className="dropdown">
+                  <button class="dropbtn">More</button>
+
+                  <div className="dropdown-content">
+                    <a href="#Blog">Blog</a>
+                    <a href="#Certification">Certification</a>
+                    <a href="#Alumni Team">Alumni Team</a>
+                    <a href="#Forum">Forum</a>
+                    <a href="#Hackathon">Hackathon</a>
+                    <a href="#Membership Registration">Membkrship Registration</a>
+                    <a href="#Campus Ambassador Program">Campus Ambassador Program</a>
+                    <a href="#Mentorship">Mentorship</a>
+                    <a href="#Social Meadia">Social Meadia</a>
+                    <a href="#Testimonials">Testimonials</a>
+                    <a href="#Complaints">Complaints</a>
+                  </div>
+                </div>
               </Link>
+
             </li>
 
-            <li>
-              <Link
-                to='/sign-up'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
-                Sign Up
-              </Link>
-            </li>
+
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+
         </div>
       </nav>
     </>
