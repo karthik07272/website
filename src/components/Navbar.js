@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import Logo from './logo.PNG';
 import './Navbar.css';
 
 function Navbar() {
@@ -27,10 +28,17 @@ function Navbar() {
   return (
     <>
       <nav className='navbar'>
+      <div className="name">
+          <h1><p>THE</p>  
+          <p>ENTERPRENEURESHIP</p>
+           <p>NETWORK</p></h1>
+          </div>
         <div className='navbar-container'>
+          
           <div to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            Logo
-            <i class='fab fa-typo3' />
+            
+            <img src={Logo} width="100px" alt="logo"/>
+            {/* <i class='fab fa-typo3' /> */}
           </div>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -67,7 +75,7 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 <div className="dropdown">
-                  <button class="dropbtn">More</button>
+                  <Link class="dropbtn">More</Link>
 
                   <div className="dropdown-content">
                     <a href="#Blog">Blog</a>
